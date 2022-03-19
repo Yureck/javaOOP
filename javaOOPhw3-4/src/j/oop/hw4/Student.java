@@ -1,4 +1,4 @@
-package j.oop.hw3;
+package j.oop.hw4;
 
 public class Student extends Human {
 
