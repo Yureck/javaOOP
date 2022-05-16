@@ -1,14 +1,13 @@
-# javaOOP/hw4
+# javaOOP/hw5,8
 
-The class "AddStdFrKeyB" was added  that implements reading student from keyboard.
+1)The class "GroupFileStorage" was added with methods "void saveGroupToCSV(Group gr)", "Group loadGroupFromCSV(File file)", "File findFileByGroupName(String groupName, File workFolder)".
 
-Interface "public interface StringConverter" was created and a class "CSVStringConverter", which implements this interface .
+Class "RunGroupStorage" was created for testing of class "GroupFileStorage".
 
-Class "RunAddStdCSVStConv" was created for testing classes "AddStdFrKeyB", "CSVStringConverter".
+2)Methods "equals", "hashCode" were added to the classes "Human", "student", "Group".
 
-The class "AddStdFrKeyB" was added  that implements reading student from keybord.
+3)Method "public boolean studentsEquals(Student student)" was added to the class "Group", also the call of this method was added to the "public void addStudent(Student student)" to check for the equivalence of students.
 
-Interface "public interface StringConverter" was created and a class "CSVStringConverter", which implements this interface .
+Testing of this method is checking in "Main" class.
 
-Class "RunAddStdCSVStConv" was created for testing classes "AddStdFrKeyB", "CSVStringConverter".
 

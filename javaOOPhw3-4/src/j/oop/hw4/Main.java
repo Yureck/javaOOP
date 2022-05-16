@@ -1,5 +1,8 @@
 package j.oop.hw4;
 
+import java.io.File;
+import java.io.IOException;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -42,7 +45,7 @@ public class Main {
 		try {
 			group.searchStudentByLastName("Watson");
 			group.searchStudentByLastName("Shepard"); // don't exist
-			
+
 		} catch (StudentNotFoundException e) {
 			System.out.println(e);
 		}
@@ -51,7 +54,7 @@ public class Main {
 		group.removeStudentByID(5);
 		group.removeStudentByID(7);
 		group.removeStudentByID(12); // don't exist
-		
+
 		System.out.println();
 		System.out.println(group);
 
@@ -66,6 +69,14 @@ public class Main {
 		System.out.println();
 		System.out.println(group);
 		System.out.println(st5.getGroupName());
+		
+		
+		System.out.println("------------------------");
+		
+		System.out.println(group.studentsEquals(st5));
+
+		
+
 	}
 
 }
